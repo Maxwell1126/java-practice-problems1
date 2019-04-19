@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.practice.app.AppTest" time="0.046" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.practice.app.OrderTest" time="0.002" tests="3" errors="0" skipped="0" failures="2">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -61,8 +61,21 @@
     <property name="java.class.version" value="52.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="abcdeaReturnsOne" classname="com.practice.app.AppTest" time="0.002"/>
-  <testcase name="reallyLongStringContainingDuplicatesReturnsThree" classname="com.practice.app.AppTest" time="0.02"/>
-  <testcase name="indivisibilityReturnsOne" classname="com.practice.app.AppTest" time="0"/>
-  <testcase name="abcdeReturnsZero" classname="com.practice.app.AppTest" time="0"/>
+  <testcase name="test1" classname="com.practice.app.OrderTest" time="0.001">
+    <failure message="&#10;Expected: &quot;Thi1s is2 3a T4est&quot;&#10;     but: was &quot;is2 Thi1s T4est 3a&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+
+Expected: "Thi1s is2 3a T4est"
+     but: was "is2 Thi1s T4est 3a"
+	at com.practice.app.OrderTest.test1(OrderTest.java:10)
+</failure>
+  </testcase>
+  <testcase name="test2" classname="com.practice.app.OrderTest" time="0">
+    <failure message="&#10;Expected: &quot;Fo1r the2 g3ood 4of th5e pe6ople&quot;&#10;     but: was &quot;4of Fo1r pe6ople g3ood th5e the2&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+
+Expected: "Fo1r the2 g3ood 4of th5e pe6ople"
+     but: was "4of Fo1r pe6ople g3ood th5e the2"
+	at com.practice.app.OrderTest.test2(OrderTest.java:15)
+</failure>
+  </testcase>
+  <testcase name="test3" classname="com.practice.app.OrderTest" time="0"/>
 </testsuite>

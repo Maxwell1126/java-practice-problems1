@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.practice.app.OrderTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! - in com.practice.app.OrderTest
+test1(com.practice.app.OrderTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: "Thi1s is2 3a T4est"
+     but: was "is2 Thi1s T4est 3a"
+	at com.practice.app.OrderTest.test1(OrderTest.java:10)
+
+test2(com.practice.app.OrderTest)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: "Fo1r the2 g3ood 4of th5e pe6ople"
+     but: was "4of Fo1r pe6ople g3ood th5e the2"
+	at com.practice.app.OrderTest.test2(OrderTest.java:15)
+

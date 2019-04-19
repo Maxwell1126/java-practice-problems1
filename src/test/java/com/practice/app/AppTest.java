@@ -1,9 +1,11 @@
 package com.practice.app;
 
-import static org.junit.Assert.assertEquals;
+
 
 import org.junit.Test;
+import static org.junit.Assert.*;
 
+import static org.hamcrest.CoreMatchers.*;
 /**
  * Unit test for simple App.
  */
@@ -36,3 +38,6 @@ public class AppTest
         assertEquals(3, CountingDuplicates.duplicateCount(test));
     }
 }
+
+
+
