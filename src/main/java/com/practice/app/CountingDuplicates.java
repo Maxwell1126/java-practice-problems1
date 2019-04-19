@@ -2,6 +2,7 @@ package com.practice.app;
 import java.util.ArrayList;
 public class CountingDuplicates {
     public static int duplicateCount(String text) {
+        text = text.toLowerCase();
         ArrayList<String> dupes = new ArrayList<String>();
         for (int i = 0; i < text.length(); i++) {
             for (int j = i + 1; j < text.length(); j++) {
@@ -11,7 +12,6 @@ public class CountingDuplicates {
                 }
             }
         }
-
         return dupes.size();
     }
 
